@@ -14,12 +14,12 @@ var fall_timer = 0.0
 var fall_delay = 0.5
 var next_tetromino_type = "I"
 
-onready var next_preview = $NextPreview
-onready var sfx_move = $SFX_Move
-onready var sfx_rotate = $SFX_Rotate
-onready var sfx_clear = $SFX_Clear
-onready var sfx_gameover = $SFX_GameOver
-onready var music = $Music
+@onready var next_preview = $NextPreview
+@onready var sfx_move = $SFX_Move
+@onready var sfx_rotate = $SFX_Rotate
+@onready var sfx_clear = $SFX_Clear
+@onready var sfx_gameover = $SFX_GameOver
+@onready var music = $Music
 
 func _ready():
     randomize()
@@ -152,7 +152,7 @@ func _input(event):
         current_tetromino.position = board_to_screen(current_pos)
         lock_tetromino()
 
-def board_to_screen(pos: Vector2) -> Vector2:
+func board_to_screen(pos: Vector2) -> Vector2:
     return Vector2(pos.x * BLOCK_SIZE, pos.y * BLOCK_SIZE)
 
 func _draw():
