@@ -2,4 +2,23 @@
 
 [node name="Main" type="Node2D"]
 
+[node name="NextPreview" type="Node2D" parent="."]
+position = Vector2(280, 80)
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("res://assets/korobeiniki_chiptune.ogg")
+autoplay = true
+
+[node name="SFX_Move" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("res://assets/sfx_move.wav")
+
+[node name="SFX_Rotate" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("res://assets/sfx_rotate.wav")
+
+[node name="SFX_Clear" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("res://assets/sfx_clear.wav")
+
+[node name="SFX_GameOver" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("res://assets/sfx_gameover.wav")
+
 [script path="res://Main.gd"]

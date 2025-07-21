@@ -19,6 +19,11 @@ A classic Tetris game built in Godot, using only the 5 classic Tetrominos (I, O,
 - 5 classic Tetrominos (I, O, T, L, S)
 - Standard Tetris rules: gravity, rotation, line clear, scoring, game over
 - Simple block graphics
+- **Polish:**
+  - Sound effects for movement, rotation, line clear, and game over
+  - Next piece preview
+  - Chiptune rendition of "Korobeiniki" (classic Tetris theme)
+  - All assets are in the `assets/` folder
 
 ---
 
